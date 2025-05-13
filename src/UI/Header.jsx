@@ -76,6 +76,7 @@ function Header() {
                   <Link
                     key={item.name}
                     to={item.to}
+                    onClick={() => setMobileMenuOpen(false)}
                     className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-pink-500"
                   >
                     {item.name}

@@ -78,7 +78,7 @@ function Contact() {
           </a>{" "}
           or call{" "}
           <a href="tel:+251966831024" className="text-pink-700 underline">
-            +251 911 223 344
+            +251 966831024
           </a>
         </p>
         <p className="mt-2 text-black">Addis Ababa, Ethiopia</p>

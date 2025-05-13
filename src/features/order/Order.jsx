@@ -92,7 +92,7 @@ That's why we can't always rely on loaders
 
       <div className="space-y-2 bg-pink-100 px-6 py-5">
         <p className="text-sm font-medium text-stone-600">
-          Price pizza: {formatCurrency(orderPrice)}
+          Price Flower: {formatCurrency(orderPrice)}
         </p>
         {priority && (
           <p className="text-sm font-medium text-stone-600">

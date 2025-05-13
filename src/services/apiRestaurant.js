@@ -173,17 +173,6 @@ const flowerList = [
     soldOut: false,
     taxRate: 0.19,
   },
-  {
-    id: 18,
-    name: "Scabiosa",
-    description:
-      "Pincushion-like flower grown for its unique shape and gentle color.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1625686174428-61ab1e561395?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8U2NhYmlvc2F8ZW58MHx8MHx8fDA%3D",
-    unitPrice: 12,
-    soldOut: false,
-    taxRate: 0.16,
-  },
 ];
 
 export async function getMenu() {

@@ -18,9 +18,11 @@ function Cart() {
   if (!cart.length) return <EmptyCart />;
   return (
     <div className="px-4 py-3">
-      <LinkButton to="/menu">&larr; Back to menu</LinkButton>
+      <Button type="primary" to="/menu">
+        &larr; Back to menu
+      </Button>
 
-      <h2 className="mt-7 text-xl font-semibold">Your cart, {username}</h2>
+      <h2 className="mt-7 text-xl font-semibold">Your cart</h2>
 
       <ul className="mt-3 divide-y-2 divide-stone-200 border-b">
         {cart.map((item) => (
@@ -32,7 +34,7 @@ function Cart() {
         <Button to="/order/new" type="primary">
           Order FLowers
         </Button>
-        <Button type="secondary" onClick={handleClearCart}>
+        <Button type="primary" onClick={handleClearCart}>
           Clear Cart
         </Button>
       </div>

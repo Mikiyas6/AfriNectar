@@ -43,7 +43,7 @@ That's why we can't always rely on loaders
     cart,
   } = order;
   const totalTax = cart.reduce((acc, item) => {
-    const tax = 0.03 * item.unitPrice * item.quantity + item.totalPrice;
+    const tax = 0.0003 * item.unitPrice * item.quantity + item.totalPrice;
     return acc + tax;
   }, 0);
   console.log("FINAL", order);
@@ -65,7 +65,7 @@ That's why we can't always rely on loaders
         </div>
       </div>
 
-      <div className="flex flex-wrap items-center justify-between gap-2 bg-stone-200 px-6 py-5">
+      <div className="flex flex-wrap items-center justify-between gap-2 bg-pink-100 px-6 py-5">
         <p className="font-medium">
           {deliveryIn >= 0
             ? `Only ${calcMinutesLeft(estimatedDelivery)} minutes left 😃`
@@ -76,7 +76,7 @@ That's why we can't always rely on loaders
         </p>
       </div>
 
-      <ul className="divide-y divide-stone-200 border-b border-t">
+      <ul className="divide-y divide-stone-500 border-b border-b-stone-500  border-t-stone-500 border-t">
         {cart.map((item) => (
           <OrderItem
             item={item}
@@ -90,7 +90,7 @@ That's why we can't always rely on loaders
         ))}
       </ul>
 
-      <div className="space-y-2 bg-stone-200 px-6 py-5">
+      <div className="space-y-2 bg-pink-100 px-6 py-5">
         <p className="text-sm font-medium text-stone-600">
           Price pizza: {formatCurrency(orderPrice)}
         </p>

@@ -3,8 +3,9 @@ import { getMenu } from "../../services/apiRestaurant";
 import MenuItem from "./MenuItem";
 function Menu() {
   const menu = useLoaderData();
+
   return (
-    <ul className="divide-y divide-stone-200 px-2">
+    <ul className="grid grid-cols-1 gap-6 px-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
       {menu.map((pizza) => (
         <MenuItem pizza={pizza} key={pizza.id} />
       ))}

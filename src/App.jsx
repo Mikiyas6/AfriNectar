@@ -9,6 +9,9 @@ import CreateOrder, {
 } from "./features/order/CreateOrder";
 import { action as UpdateOrderAction } from "./features/order/UpdateOrder";
 import AppLayout from "./UI/AppLayout";
+import About from "./features/about/About";
+import Contact from "./features/contact/Contact";
+import Testimonials from "./features/testimonials/Testimonials";
 //  The routing setup
 /*
 - This "createBrowserRouter" function creates a router using the browser's history API. It enables navigation between routes without full-page reloads.
@@ -39,7 +42,23 @@ const router = createHashRouter([
         loader: menuLoader,
         errorElement: <Error />,
       },
+      {
+        path: "/about",
+        element: <About />,
+        errorElement: <Error />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
+        errorElement: <Error />,
+      },
+      {
+        path: "/testimonials",
+        element: <Testimonials />,
+        errorElement: <Error />,
+      },
       { path: "/cart", element: <Cart /> },
+
       {
         path: "/order/new",
         element: <CreateOrder />,

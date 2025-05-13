@@ -15,6 +15,11 @@
     animation: loading 1s infinite linear;
   }
 
+  body {
+    @apply bg-cover bg-center bg-no-repeat min-h-screen;
+    background-image: url("/bg5.jpg");
+  }
+
   @keyframes loading {
     20% {
       background-position: 0% 0%, 50% 50%, 100% 50%;

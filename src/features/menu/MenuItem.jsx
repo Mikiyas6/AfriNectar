@@ -28,34 +28,39 @@ function MenuItem({ pizza }) {
   }
 
   return (
-    <li className="gap flex gap-4 py-2 ">
+    <li className="bg-white rounded-xl shadow-md overflow-hidden flex flex-col transition duration-300 hover:scale-105">
       <img
         src={imageUrl}
         alt={name}
-        className={`h-48 ${soldOut ? "opacity-70 grayscale" : ""}`}
+        className={`h-48 w-full object-cover ${
+          soldOut ? "opacity-70 grayscale" : ""
+        }`}
       />
-      <div className="flex grow flex-col pt-2.5">
-        <p className="font-medium">{name}</p>
-        <p className="text-sm capitalize italic text-stone-500">
+
+      <div className="flex flex-col grow p-4">
+        <p className="font-semibold text-lg">{name}</p>
+        <p className="text-sm capitalize italic text-stone-500 mt-1 mb-3">
           {description}
         </p>
         <div className="mt-auto flex items-center justify-between">
           {!soldOut ? (
-            <p className="text-sm">{formatCurrency(unitPrice)}</p>
+            <p className="text-sm font-medium text-green-800">
+              {formatCurrency(unitPrice)}
+            </p>
           ) : (
             <p className="text-sm font-medium uppercase text-stone-500">
               Sold out
             </p>
           )}
+
           {!soldOut && !isInCart && (
-            <div>
-              <Button onClick={handleAddToCart} type="small">
-                Add to Cart
-              </Button>
-            </div>
+            <Button onClick={handleAddToCart} type="small">
+              Add to Cart
+            </Button>
           )}
+
           {isInCart && (
-            <div className="flex items-center gap-3 sm:gap-8">
+            <div className="flex items-center gap-2">
               <UpdateItemQuantity
                 currentQuantity={currentQuantity}
                 pizzaId={id}

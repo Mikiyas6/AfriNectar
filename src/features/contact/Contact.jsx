@@ -7,7 +7,7 @@ function Contact() {
         </h2>
         <p className="mt-4 text-lg text-pink-600">
           Have a question, special request, or just want to say hello? Fill out
-          the form below, and we`apos&;`ll get back to you shortly.
+          the form below, and we&apos;ll get back to you shortly.
         </p>
       </div>
 

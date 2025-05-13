@@ -20,7 +20,7 @@ function Header() {
         <div className="flex lg:flex-1">
           <Link to="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <span className="text-4xl text-pink-900">AFRINECTAR</span>
+            <span className="text-4xl text-pink-900 ">AFRINECTAR</span>
           </Link>
         </div>
         <div className="flex lg:hidden">
@@ -73,13 +73,13 @@ function Header() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 {navigation.map((item) => (
-                  <a
+                  <Link
                     key={item.name}
                     to={item.to}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-50"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-pink-500"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
               <SearchOrder />

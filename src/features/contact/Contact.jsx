@@ -77,7 +77,7 @@ function Contact() {
             support@afrinenectar.com
           </a>{" "}
           or call{" "}
-          <a href="tel:+251911223344" className="text-pink-700 underline">
+          <a href="tel:+251966831024" className="text-pink-700 underline">
             +251 911 223 344
           </a>
         </p>

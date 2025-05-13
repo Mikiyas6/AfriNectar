@@ -71,9 +71,9 @@ src/
 
 ## 📬 Contact
 
-Made with ❤️ by Ahadu
+Made with ❤️ by AHADU SOLOMON ASSEFA
 
-- Email: ""
+- Email: Solomonmesfin0913@gmail.com
 
 ---
 

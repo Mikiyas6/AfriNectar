@@ -93,15 +93,3 @@ function Header() {
 }
 
 export default Header;
-
-// function Header() {
-//   return (
-//     <header className="px flex items-center justify-between border-b border-stone-200 bg-green-800 px-4 py-3 uppercase sm:px-6">
-//       <Link className="tracking-widest" to="/">
-//         AfriNectar
-//       </Link>
-//       <SearchOrder />
-//       <Username />
-//     </header>
-//   );
-// }
